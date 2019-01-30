@@ -142,6 +142,12 @@ function loadterms() {
     $('#terms').load('html/terms.html', startupscripts);
 }
 
+function showall(e){
+    //console.log("showall",e);
+    $(".offyear").removeClass("offyear").addClass("registrationyear");
+    $("offyear").css("display", "inline-block");
+}
+
 function startupscripts() {
     $(".course-menu").html(makeCoursesMenu(courses));
     updateReqsList(reqs);
@@ -149,4 +155,12 @@ function startupscripts() {
     $('body').on('click', '.close', removeCourse);
     $('body').on('change', '#cohort', updateCohort);
     $('body').on('click', '#importclasslist', importClassList);
+     $('body').on('click', '#showall', showall);
+
+}
+
+document.getElementById("regbutton").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("regbutton").innerHTML = "YOU CLICKED ME!";
 }

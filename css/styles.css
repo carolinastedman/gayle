@@ -1,13 +1,19 @@
 .card {
     /*width: 18rem;*/
-}
+   }
 
 /*Needed because long course list is problem*/
 .scrollable-menu {
     height: auto;
-    max-height: 200px;
+    max-height: 300px;
     overflow-x: hidden;
 }
+.offyear{
+    background: lightblue;
+    display:none;
+}
+
+
 .progress{
 	background: black;
 }
@@ -31,4 +37,22 @@
     background-image: url('../img/saas.svg');
     background-repeat: no-repeat;
     color:transparent !important;
+}
+
+.regbutton {
+    text-align: right;
+    display: inline-block;
+    padding: 15px 32px;
+    border: 2px solid blue;
+    -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  color: blue;
+  font-size: 15px;
+  background-color: white;
+margin-top:30px;
+}
+
+.regbutton:hover {
+  background-color: blue;
+  color: white;
 }
